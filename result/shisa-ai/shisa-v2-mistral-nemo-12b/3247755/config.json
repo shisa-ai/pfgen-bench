@@ -1,0 +1,1 @@
+{"engine": "vllm", "max_tokens": 300, "mode": "qa", "model": "shisa-ai/shisa-v2-mistral-nemo-12b", "num_examples": 20, "quantization": null, "stop": ["Q:"], "temperature": 0.7, "tensor_parallel_size": -1, "top_p": 0.9}
