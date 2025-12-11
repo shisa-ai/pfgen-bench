@@ -1,0 +1,1 @@
+{"engine": "vllm", "max_tokens": 300, "mode": "completion", "model": "shisa-ai/shisa-v2.1-qwen3-8b", "num_examples": 20, "quantization": null, "stop": ["Q:", "\n\n"], "temperature": 1.0, "tensor_parallel_size": -1, "top_p": 0.98}

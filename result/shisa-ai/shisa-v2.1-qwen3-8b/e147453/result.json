@@ -1,0 +1,2482 @@
+{
+  "input_hash": "4939fca105d4aec21ee8de621ee6e7a54a6c0b06",
+  "metadata_hash": "13581cc9df3fb849ec9293bcec2b03de1a48ecc2",
+  "config": {
+    "engine": "vllm",
+    "max_tokens": 300,
+    "mode": "qa",
+    "model": "shisa-ai/shisa-v2.1-qwen3-8b",
+    "num_examples": 20,
+    "quantization": null,
+    "stop": [
+      "Q:"
+    ],
+    "temperature": 0.7,
+    "tensor_parallel_size": -1,
+    "top_p": 0.9
+  },
+  "num_trials": 1,
+  "score": 0.678,
+  "score_std": 0.0,
+  "length": 122.6,
+  "length_std": 38.9,
+  "scores": {
+    "fluency": {
+      "R": 0.02758,
+      "P": 0.34075,
+      "S": 0.22176,
+      "T": 0.21183
+    },
+    "truthfulness": {
+      "R": 0.04742,
+      "P": 0.36943,
+      "S": 0.23359,
+      "T": 0.22875
+    },
+    "helpfulness": 0.3528,
+    "average": 0.67797
+  },
+  "questions": {
+    "Q01": {
+      "question": "時計の長針と短針が1日に重なる回数は？",
+      "score": 0.4235,
+      "score_std": 0.0,
+      "length": 34.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "R": 0.34152
+        },
+        "truthfulness": {
+          "R": 0.92903
+        },
+        "helpfulness": 0.0,
+        "average": 0.42352
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "時計の長針と短針は1日に144回（1時間に11分の1回）重なります。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.402876",
+          "scores": {
+            "fluency": {
+              "R": 0.341515
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "R": 0.929032
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "22回",
+                0.0
+              ]
+            ],
+            "average": 0.42352
+          }
+        }
+      ]
+    },
+    "Q02": {
+      "question": "つるかめ算について教えて。",
+      "score": 0.755,
+      "score_std": 0.0,
+      "length": 205.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "P": 1.28491
+        },
+        "truthfulness": {
+          "P": 0.98
+        },
+        "helpfulness": 0.0,
+        "average": 0.75497
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "つるかめ算は、つるとかめが合わせて何匹いるか、足の総数が何本かが分かっているとき、それぞれ何匹いるかを求める問題です。連立方程式を立てることで解くことができます。例えば、「つるとかめが合わせて10匹、足の総数が28本のとき、それぞれ何匹いるか？」という問題を解く場合、つるとかめの数をそれぞれx、yとすると、x + y = 10 と 2x + 4y = 28 の連立方程式を立て、解くことで答えを求められます。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.402919",
+          "scores": {
+            "fluency": {
+              "P": 1.284914
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "P": 0.98
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "算数",
+                0.0
+              ]
+            ],
+            "average": 0.75497
+          }
+        }
+      ]
+    },
+    "Q03": {
+      "question": "直角二等辺三角形の特徴を説明してください。",
+      "score": 1.0418,
+      "score_std": 0.0,
+      "length": 118.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "P": 1.12538
+        },
+        "truthfulness": {
+          "P": 1.0
+        },
+        "helpfulness": 1.0,
+        "average": 1.04179
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "直角二等辺三角形は、1つの角が直角（90度）で、他の2つの角がそれぞれ45度である三角形です。2つの辺の長さが等しく、斜辺を挟む2つの角が等しいという特徴があります。斜辺と他の2辺の比は1:1:√2となり、ピタゴラスの定理を満たします。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.402941",
+          "scores": {
+            "fluency": {
+              "P": 1.125381
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "P": 1.0
+            },
+            "helpfulness": 1.0,
+            "helpfulness_results": [],
+            "average": 1.04179
+          }
+        }
+      ]
+    },
+    "Q04": {
+      "question": "算数と数学の違いは何ですか？",
+      "score": 1.0071,
+      "score_std": 0.0,
+      "length": 129.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "S": 0.35985,
+          "P": 0.32438,
+          "T": 0.35171
+        },
+        "truthfulness": {
+          "S": 0.33333,
+          "P": 0.32674,
+          "T": 0.32527
+        },
+        "helpfulness": 1.0,
+        "average": 1.0071
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "算数は、具体的な数や計算を中心に、日常生活で必要な基本的な数学的知識を学ぶ学問です。一方、数学は、算数に加えて、抽象的な概念や理論、証明などを扱い、より高度な問題解決能力を養う学問です。算数は数学の基礎を築くものであり、数学は算数を応用・発展させたものです。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.402957",
+          "scores": {
+            "fluency": {
+              "S": 0.359853,
+              "P": 0.324381,
+              "T": 0.351707
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "S": 0.333333,
+              "P": 0.32674,
+              "T": 0.325275
+            },
+            "helpfulness": 1.0,
+            "helpfulness_results": [],
+            "average": 1.0071
+          }
+        }
+      ]
+    },
+    "Q05": {
+      "question": "ナメクジに塩をかけるとなぜ溶けてしまうの？",
+      "score": 0.5824,
+      "score_std": 0.0,
+      "length": 104.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "S": 0.29179,
+          "T": 0.29185,
+          "P": 0.275
+        },
+        "truthfulness": {
+          "S": 0.29645,
+          "T": 0.29503,
+          "P": 0.29716
+        },
+        "helpfulness": 0.0,
+        "average": 0.58243
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "ナメクジに塩をかけると、体表面の水分が急速に蒸発し、細胞が脱水症状に陥り、体液が失われてやつれてしまうため、まるで溶けるように見えるのです。これは、ナメクジが保有する水分が塩分によって急速に奪われるためです。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.402972",
+          "scores": {
+            "fluency": {
+              "S": 0.291788,
+              "T": 0.291855,
+              "P": 0.275
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "S": 0.296454,
+              "T": 0.295035,
+              "P": 0.297163
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "浸透圧",
+                0.0
+              ]
+            ],
+            "average": 0.58243
+          }
+        }
+      ]
+    },
+    "Q06": {
+      "question": "ミドリムシの特徴を教えて。",
+      "score": 0.5049,
+      "score_std": 0.0,
+      "length": 102.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "T": 0.27384,
+          "P": 0.24822,
+          "S": 0.25799
+        },
+        "truthfulness": {
+          "T": 0.27312,
+          "P": 0.23513,
+          "S": 0.22652
+        },
+        "helpfulness": 0.0,
+        "average": 0.50494
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "ミドリムシは、緑色の単細胞藻類で、葉緑体を持ち光合成を行います。球状や楕円形をしており、水や土壌に広く分布し、微小生物の餌としても利用されます。また、藻ブルームを引き起こす原因となることも知られています。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.402984",
+          "scores": {
+            "fluency": {
+              "T": 0.27384,
+              "P": 0.24822,
+              "S": 0.257987
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "T": 0.273118,
+              "P": 0.235125,
+              "S": 0.226523
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "動物",
+                0.0
+              ]
+            ],
+            "average": 0.50494
+          }
+        }
+      ]
+    },
+    "Q07": {
+      "question": "顕性と潜性の違いは？",
+      "score": 0.6096,
+      "score_std": 0.0,
+      "length": 138.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "P": 0.82879
+        },
+        "truthfulness": {
+          "P": 1.0
+        },
+        "helpfulness": 0.0,
+        "average": 0.6096
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "顕性とは、形質や特性が明確に現れている状態を指し、潜性とは、形質や特性が抑制され、現れていない状態を指します。例えば、遺伝子の形質として、顕性遺伝と潜性遺伝があります。顕性遺伝では、優性の遺伝子が現れ、形質が現れます。一方、潜性遺伝では、劣性の遺伝子が隠れ、形質が現れません。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.402995",
+          "scores": {
+            "fluency": {
+              "P": 0.828793
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "P": 1.0
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "表現型",
+                0.0
+              ]
+            ],
+            "average": 0.6096
+          }
+        }
+      ]
+    },
+    "Q08": {
+      "question": "スズムシの鳴き声について教えて。",
+      "score": 0.4527,
+      "score_std": 0.0,
+      "length": 95.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "P": 0.56973
+        },
+        "truthfulness": {
+          "P": 0.78851
+        },
+        "helpfulness": 0.0,
+        "average": 0.45275
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "スズムシの鳴き声は、翅を振動させて発する「スズスズ」という音で、主にメスが発し、オスが求愛や敵対行為に用いられます。音の周波数やリズムは種によって異なり、種類を識別する手がかりにもなります。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403009",
+          "scores": {
+            "fluency": {
+              "P": 0.569732
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "P": 0.788506
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "リーン",
+                0.0
+              ],
+              [
+                "秋",
+                0.0
+              ]
+            ],
+            "average": 0.45275
+          }
+        }
+      ]
+    },
+    "Q09": {
+      "question": "タマネギを切ると涙が出るのはなぜ？",
+      "score": 0.6381,
+      "score_std": 0.0,
+      "length": 99.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "P": 0.96737
+        },
+        "truthfulness": {
+          "P": 0.94681
+        },
+        "helpfulness": 0.0,
+        "average": 0.63806
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "タマネギを切ると涙が出るのは、タマネギの細胞が破壊されるとアリルスルフィドという物質が放出され、これが涙腺を刺激して涙が流れるためです。この物質は空気中で分解され、硫化水素のような刺激臭を放ちます。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403018",
+          "scores": {
+            "fluency": {
+              "P": 0.967371
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "P": 0.946809
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "酵素",
+                0.0
+              ],
+              [
+                "プロパンチアール",
+                0.0
+              ]
+            ],
+            "average": 0.63806
+          }
+        }
+      ]
+    },
+    "Q10": {
+      "question": "接触法について教えて。",
+      "score": 0.2695,
+      "score_std": 0.0,
+      "length": 144.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "R": 0.3001
+        },
+        "truthfulness": {
+          "R": 0.50851
+        },
+        "helpfulness": 0.0,
+        "average": 0.26954
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "接触法は、石炭の製鉄に用いられる化学的プロセスで、コークスと石灰石を用いて高炉で石炭を精錬し、生鉄を製造する方法です。コークスは石炭を強熱して生成される炭素の塊で、還元剤として機能し、生鉄の製造に不可欠です。このプロセスは、19世紀にイギリスで開発され、現代の製鉄業の基礎となっています。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403026",
+          "scores": {
+            "fluency": {
+              "R": 0.300096
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "R": 0.508511
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "硫酸",
+                0.0
+              ],
+              [
+                "触媒",
+                0.0
+              ],
+              [
+                "二酸化硫黄",
+                0.0
+              ],
+              [
+                "酸化バナジウム",
+                0.5
+              ]
+            ],
+            "average": 0.26954
+          }
+        }
+      ]
+    },
+    "Q11": {
+      "question": "温泉卵と半熟卵の違いは何から生まれるの？",
+      "score": 0.6427,
+      "score_std": 0.0,
+      "length": 127.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "T": 0.36449,
+          "P": 0.34976,
+          "S": 0.32347
+        },
+        "truthfulness": {
+          "T": 0.31039,
+          "P": 0.29462,
+          "S": 0.2853
+        },
+        "helpfulness": 0.0,
+        "average": 0.64268
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "温泉卵と半熟卵の違いは、調理時間と火加減から生まれます。温泉卵は、卵を湯煎でゆっくりと加熱することで、黄身全体がやわらかく半熟状態になるのに対し、半熟卵は、加熱時間を短くしたり、卵の下部を冷たい水に浸すなどして、黄身の一部のみを半熟に保つことができます。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403055",
+          "scores": {
+            "fluency": {
+              "T": 0.364488,
+              "P": 0.349765,
+              "S": 0.323465
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "T": 0.310394,
+              "P": 0.294624,
+              "S": 0.285305
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "70度",
+                0.0
+              ]
+            ],
+            "average": 0.64268
+          }
+        }
+      ]
+    },
+    "Q12": {
+      "question": "リトマス紙の使い方を教えて。",
+      "score": 0.6168,
+      "score_std": 0.0,
+      "length": 116.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "S": 0.29538,
+          "T": 0.29931,
+          "P": 0.29823
+        },
+        "truthfulness": {
+          "S": 0.32057,
+          "T": 0.31418,
+          "P": 0.3227
+        },
+        "helpfulness": 0.0,
+        "average": 0.61679
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "リトマス紙は、酸性・アルカリ性を判定するための試験紙で、赤いリトマス紙を酸性液に浸すと水色に変色し、青いリトマス紙をアルカリ性液に浸すと赤色に変色します。変色した色をpH試験紙と照合することで、液体の酸性・アルカリ性を確認できます。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403065",
+          "scores": {
+            "fluency": {
+              "S": 0.295379,
+              "T": 0.299312,
+              "P": 0.298233
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "S": 0.320567,
+              "T": 0.314184,
+              "P": 0.322695
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "青色",
+                0.0
+              ]
+            ],
+            "average": 0.61679
+          }
+        }
+      ]
+    },
+    "Q13": {
+      "question": "ドップラー効果について教えて。",
+      "score": 0.7264,
+      "score_std": 0.0,
+      "length": 185.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "S": 0.24296,
+          "P": 0.24313,
+          "T": 0.24062
+        },
+        "truthfulness": {
+          "S": 0.29176,
+          "P": 0.28459,
+          "T": 0.29606
+        },
+        "helpfulness": 0.58,
+        "average": 0.72637
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "ドップラー効果とは、波源と観測者の相対的な運動によって、波の周波数や波長が変化する現象で、音波や光波など、あらゆる種類の波に起こります。波源が観測者に近づくと周波数が上がり（音は高くなる、光は青く見える）、遠ざかると周波数が下がります（音は低くなる、光は赤く見える）。この効果は、宇宙空間の膨張による赤方偏移や、医療分野での超音波検査など、様々な分野で応用されています。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403073",
+          "scores": {
+            "fluency": {
+              "S": 0.242959,
+              "P": 0.243125,
+              "T": 0.240618
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "S": 0.291756,
+              "P": 0.284588,
+              "T": 0.296057
+            },
+            "helpfulness": 0.58,
+            "helpfulness_results": [
+              [
+                "21字超過",
+                0.5800000000000001
+              ]
+            ],
+            "average": 0.72637
+          }
+        }
+      ]
+    },
+    "Q14": {
+      "question": "超伝導とは何ですか？",
+      "score": 1.0417,
+      "score_std": 0.0,
+      "length": 90.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "S": 0.36215,
+          "P": 0.38717,
+          "T": 0.39298
+        },
+        "truthfulness": {
+          "S": 0.31843,
+          "P": 0.33333,
+          "T": 0.33098
+        },
+        "helpfulness": 1.0,
+        "average": 1.04168
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "超伝導とは、特定の物質を極低温まで冷却すると電気抵抗がゼロになる現象です。これにより、電気エネルギーを損失なく伝送できるため、効率的な送電や強力な磁石の製造などに応用されています。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403090",
+          "scores": {
+            "fluency": {
+              "S": 0.362154,
+              "P": 0.387173,
+              "T": 0.392975
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "S": 0.318431,
+              "P": 0.333333,
+              "T": 0.33098
+            },
+            "helpfulness": 1.0,
+            "helpfulness_results": [],
+            "average": 1.04168
+          }
+        }
+      ]
+    },
+    "Q15": {
+      "question": "虹はどうして虹色なの？",
+      "score": 0.9959,
+      "score_std": 0.0,
+      "length": 124.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "S": 0.34934,
+          "T": 0.29108,
+          "P": 0.36936
+        },
+        "truthfulness": {
+          "S": 0.32414,
+          "T": 0.32874,
+          "P": 0.3249
+        },
+        "helpfulness": 1.0,
+        "average": 0.99585
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "虹が虹色になるのは、太陽光が雨粒の中で屈折・反射・分散されることで、白色光がスペクトルに分解され、赤、橙、黄、緑、青、藍、紫の7色に分かれ、特定の角度で観測者の目に届くためです。太陽光の波長が異なる色ごとに屈折率が異なるため、この現象が起こります。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403101",
+          "scores": {
+            "fluency": {
+              "S": 0.349341,
+              "T": 0.29108,
+              "P": 0.369359
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "S": 0.324138,
+              "T": 0.328736,
+              "P": 0.324904
+            },
+            "helpfulness": 1.0,
+            "helpfulness_results": [],
+            "average": 0.99585
+          }
+        }
+      ]
+    },
+    "Q16": {
+      "question": "カミオカンデは何を行う施設ですか？",
+      "score": 0.6007,
+      "score_std": 0.0,
+      "length": 98.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "P": 0.36957,
+          "S": 0.46363
+        },
+        "truthfulness": {
+          "P": 0.48387,
+          "S": 0.48495
+        },
+        "helpfulness": 0.0,
+        "average": 0.60067
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "カミオカンデは、ニュートリノを検出するための巨大な水タワー型の研究施設で、日本神岡鉱山の地下に建設されています。超ニュートリノ検出器として、ニュートリノ天文学や素粒子物理学の研究に貢献しています。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403111",
+          "scores": {
+            "fluency": {
+              "P": 0.369572,
+              "S": 0.463634
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "P": 0.483871,
+              "S": 0.484946
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "超新星爆発",
+                0.0
+              ]
+            ],
+            "average": 0.60067
+          }
+        }
+      ]
+    },
+    "Q17": {
+      "question": "日本はどうして地震が多いの？",
+      "score": 1.0302,
+      "score_std": 0.0,
+      "length": 163.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "P": 0.38221,
+          "T": 0.36199,
+          "S": 0.36641
+        },
+        "truthfulness": {
+          "P": 0.32667,
+          "T": 0.32667,
+          "S": 0.32667
+        },
+        "helpfulness": 1.0,
+        "average": 1.0302
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "日本は、4つのプレート（太平洋プレート、フィリピン海プレート、ユーラシアプレート、北米プレート）の境界に位置し、これらのプレートが衝突・沈み込むことで地殻変動が活発になり、地震が頻発するのです。特に、太平洋プレートとフィリピン海プレートが沈み込む場所（伊豆・小笠原弧、日本海溝、南海トラフ）は大規模地震の発生源となっています。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403121",
+          "scores": {
+            "fluency": {
+              "P": 0.382207,
+              "T": 0.361989,
+              "S": 0.366408
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "P": 0.326667,
+              "T": 0.326667,
+              "S": 0.326667
+            },
+            "helpfulness": 1.0,
+            "helpfulness_results": [],
+            "average": 1.0302
+          }
+        }
+      ]
+    },
+    "Q18": {
+      "question": "糸魚川静岡構造線とは何ですか？",
+      "score": 0.5225,
+      "score_std": 0.0,
+      "length": 115.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "T": 0.22007,
+          "P": 0.22416,
+          "S": 0.19908
+        },
+        "truthfulness": {
+          "T": 0.30456,
+          "P": 0.30667,
+          "S": 0.31298
+        },
+        "helpfulness": 0.0,
+        "average": 0.5225
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "糸魚川静岡構造線とは、本州を東西に貫く大きな地溝帯で、約4000万年前の地殻変動によって形成されました。地震活動が活発で、糸魚川から静岡まで続く険しい山脈や断層を特徴とし、日本の地質学的な境界線としても重要な役割を果たしています。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403133",
+          "scores": {
+            "fluency": {
+              "T": 0.220066,
+              "P": 0.224157,
+              "S": 0.199081
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "T": 0.304561,
+              "P": 0.306667,
+              "S": 0.312982
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "新潟県",
+                0.0
+              ]
+            ],
+            "average": 0.5225
+          }
+        }
+      ]
+    },
+    "Q19": {
+      "question": "夏はどうして暑いの？",
+      "score": 0.6056,
+      "score_std": 0.0,
+      "length": 88.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "P": 0.27671,
+          "T": 0.27923,
+          "S": 0.29021
+        },
+        "truthfulness": {
+          "P": 0.33333,
+          "T": 0.33089,
+          "S": 0.3065
+        },
+        "helpfulness": 0.0,
+        "average": 0.60563
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "夏は地球が太陽に最も近づくため、太陽からのエネルギーを受けやすく、気温が高くなるからです。また、北半球では夏至の頃に太陽が最も高く昇り、日照時間が長くなることも暑さの原因です。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403146",
+          "scores": {
+            "fluency": {
+              "P": 0.276709,
+              "T": 0.279234,
+              "S": 0.290207
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "P": 0.333333,
+              "T": 0.330894,
+              "S": 0.306504
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "傾",
+                0.0
+              ]
+            ],
+            "average": 0.60563
+          }
+        }
+      ]
+    },
+    "Q20": {
+      "question": "地球の歴史について教えて。",
+      "score": 0.9735,
+      "score_std": 0.0,
+      "length": 103.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "T": 0.47376,
+          "P": 0.45745
+        },
+        "truthfulness": {
+          "T": 0.49787,
+          "P": 0.49149
+        },
+        "helpfulness": 1.0,
+        "average": 0.97352
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "地球の歴史は約46億年前に始まり、初期には月の形成や生命の起源が起こり、その後、大気や海洋が形成され、多様な生物が進化を遂げました。現在も進化が続いており、人類の活動によって地球環境が大きく変化しています。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403153",
+          "scores": {
+            "fluency": {
+              "T": 0.473763,
+              "P": 0.457451
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "T": 0.497872,
+              "P": 0.491489
+            },
+            "helpfulness": 1.0,
+            "helpfulness_results": [],
+            "average": 0.97352
+          }
+        }
+      ]
+    },
+    "Q21": {
+      "question": "Rubyについて教えて。",
+      "score": 0.579,
+      "score_std": 0.0,
+      "length": 135.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "P": 0.34745,
+          "S": 0.41477
+        },
+        "truthfulness": {
+          "P": 0.48796,
+          "S": 0.48694
+        },
+        "helpfulness": 0.0,
+        "average": 0.57904
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "Rubyは、オブジェクト指向プログラミング言語で、直感的で読みやすい構文が特徴です。Webアプリケーション開発で広く使われ、Ruby on Railsというフレームワークで高い生産性を実現しています。シンプルさと柔軟性から、初心者にも学びやすい言語として知られています。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403161",
+          "scores": {
+            "fluency": {
+              "P": 0.347454,
+              "S": 0.414773
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "P": 0.487958,
+              "S": 0.486937
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "まつもとゆきひろ",
+                0.0
+              ]
+            ],
+            "average": 0.57904
+          }
+        }
+      ]
+    },
+    "Q22": {
+      "question": "自然言語処理の主要な技術について教えて。",
+      "score": 0.6329,
+      "score_std": 0.0,
+      "length": 121.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "S": 0.35073,
+          "P": 0.2413,
+          "T": 0.34958
+        },
+        "truthfulness": {
+          "S": 0.3272,
+          "P": 0.30881,
+          "T": 0.32107
+        },
+        "helpfulness": 0.0,
+        "average": 0.6329
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "自然言語処理の主要な技術には、形態素解析、固有表現抽出、品詞タグ付け、文法解析、意味解析、感情分析、機械翻訳、質問応答システムなどがあります。これらの技術は、テキストデータの理解、生成、翻訳、分析を可能にし、様々な応用分野で活用されています。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403172",
+          "scores": {
+            "fluency": {
+              "S": 0.350728,
+              "P": 0.2413,
+              "T": 0.349582
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "S": 0.327203,
+              "P": 0.308812,
+              "T": 0.321073
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "構文解析",
+                0.0
+              ]
+            ],
+            "average": 0.6329
+          }
+        }
+      ]
+    },
+    "Q23": {
+      "question": "オゾン層って何ですか？",
+      "score": 0.5943,
+      "score_std": 0.0,
+      "length": 170.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "S": 0.27461,
+          "T": 0.25495,
+          "P": 0.24372
+        },
+        "truthfulness": {
+          "S": 0.30053,
+          "T": 0.30344,
+          "P": 0.30562
+        },
+        "helpfulness": 0.1,
+        "average": 0.59429
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "オゾン層とは、地球の上空約15〜35kmの成層圏に存在する、酸素（O₂）が紫外線によって分解され、3つの酸素原子（O₃）が結合してできたオゾン（O₃）の層です。この層が太陽からの有害な紫外線を吸収し、地球上の生物を保護する役割を果たしています。しかし、フロンガスなどの有害物質がオゾンを破壊し、オゾン層の穴が発生する問題も指摘されています。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403183",
+          "scores": {
+            "fluency": {
+              "S": 0.274607,
+              "T": 0.25495,
+              "P": 0.243721
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "S": 0.300533,
+              "T": 0.303437,
+              "P": 0.305615
+            },
+            "helpfulness": 0.1,
+            "helpfulness_results": [
+              [
+                "45字超過",
+                0.09999999999999998
+              ]
+            ],
+            "average": 0.59429
+          }
+        }
+      ]
+    },
+    "Q24": {
+      "question": "再生可能エネルギーとは何ですか？",
+      "score": 0.9916,
+      "score_std": 0.0,
+      "length": 105.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "S": 0.32868,
+          "T": 0.33168,
+          "P": 0.32313
+        },
+        "truthfulness": {
+          "S": 0.32971,
+          "T": 0.32826,
+          "P": 0.33333
+        },
+        "helpfulness": 1.0,
+        "average": 0.9916
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "再生可能エネルギーとは、自然に再生成されるエネルギー源から得られるエネルギーで、太陽光、風力、水力、地熱、バイオマスなどが含まれます。これらのエネルギーは枯渇せず、持続可能なエネルギー源として注目されています。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403198",
+          "scores": {
+            "fluency": {
+              "S": 0.328678,
+              "T": 0.331681,
+              "P": 0.323133
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "S": 0.32971,
+              "T": 0.328261,
+              "P": 0.333333
+            },
+            "helpfulness": 1.0,
+            "helpfulness_results": [],
+            "average": 0.9916
+          }
+        }
+      ]
+    },
+    "Q25": {
+      "question": "四大公害病について教えて。",
+      "score": 0.9418,
+      "score_std": 0.0,
+      "length": 119.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "S": 0.32858,
+          "P": 0.29975,
+          "T": 0.33994
+        },
+        "truthfulness": {
+          "S": 0.28188,
+          "P": 0.27391,
+          "T": 0.30145
+        },
+        "helpfulness": 1.0,
+        "average": 0.94184
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "四大公害病とは、水俣病、新潟水俣病、イタイイタイ病、四日市ぜんそくの4つの病気で、高度な化学物質汚染によって引き起こされた公害病です。これらの病気は、公害防止法の制定や被害者の救済運動をきっかけに、公害問題への社会的な関心が高まりました。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403205",
+          "scores": {
+            "fluency": {
+              "S": 0.328583,
+              "P": 0.299754,
+              "T": 0.339943
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "S": 0.281884,
+              "P": 0.273913,
+              "T": 0.301449
+            },
+            "helpfulness": 1.0,
+            "helpfulness_results": [],
+            "average": 0.94184
+          }
+        }
+      ]
+    },
+    "Q26": {
+      "question": "夢の島の歴史について教えて。",
+      "score": 0.4805,
+      "score_std": 0.0,
+      "length": 296.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "P": 0.19828,
+          "T": 0.19792,
+          "S": 0.25554
+        },
+        "truthfulness": {
+          "P": 0.25861,
+          "T": 0.25568,
+          "S": 0.27546
+        },
+        "helpfulness": 0.0,
+        "average": 0.4805
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "夢の島は、東京都江東区に位置する人工島で、1988年に開港した遊園地「東京ディズニーリゾート」の一部として開発されました。当初は「夢の島」と名付けられましたが、ディズニーリゾートのオープンに伴い「東京ディズニーリゾート」の名称に統一されました。開発以前は、埋立地として利用されていましたが、遊園地の建設により観光地として発展しました。島の中心部には、東京ディズニーランドと東京ディズニーシーが位置し、国内外から多くの観光客が訪れます。また、島の周辺にはホテルや商業施設も整備され、リゾート施設としての機能を強化しています。夢の島は、東京のシンボル的な存在として、多くの人々に親しまれています。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403212",
+          "scores": {
+            "fluency": {
+              "P": 0.198277,
+              "T": 0.197925,
+              "S": 0.255544
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "P": 0.258608,
+              "T": 0.255678,
+              "S": 0.275458
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "ごみ",
+                0.0
+              ],
+              [
+                "公園",
+                0.0
+              ]
+            ],
+            "average": 0.4805
+          }
+        }
+      ]
+    },
+    "Q27": {
+      "question": "競技かるたとは何ですか？",
+      "score": 0.4948,
+      "score_std": 0.0,
+      "length": 125.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "T": 0.29549,
+          "P": 0.19071,
+          "S": 0.1657
+        },
+        "truthfulness": {
+          "T": 0.30151,
+          "P": 0.27121,
+          "S": 0.25985
+        },
+        "helpfulness": 0.0,
+        "average": 0.49483
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "競技かるたとは、日本の伝統的なゲームであるかるたを競技化したスポーツで、2人1組で構成されるチーム戦が一般的です。各チームが持つ「手札」から「句札」を引き、相手の「句札」を「合札」することで得点を競い、合札された句札を「敵札」として手札から外します。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403224",
+          "scores": {
+            "fluency": {
+              "T": 0.295491,
+              "P": 0.190714,
+              "S": 0.165703
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "T": 0.301515,
+              "P": 0.271212,
+              "S": 0.259848
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "百人一首",
+                0.0
+              ],
+              [
+                "取",
+                0.0
+              ]
+            ],
+            "average": 0.49483
+          }
+        }
+      ]
+    },
+    "Q28": {
+      "question": "漢文における返り点について教えて。",
+      "score": 0.4957,
+      "score_std": 0.0,
+      "length": 109.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "P": 0.62965
+        },
+        "truthfulness": {
+          "P": 0.85745
+        },
+        "helpfulness": 0.0,
+        "average": 0.4957
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "漢文における返り点は、訓読によって読み方が変わる漢字を示す記号で、元の漢字の読み方に影響を与え、現代の日本語の読み方や意味の理解を助ける役割を果たします。返り点は、訓読の変化を視覚的に示すことで、読解の助けとなります。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403232",
+          "scores": {
+            "fluency": {
+              "P": 0.629651
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "P": 0.857447
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "レ点",
+                0.0
+              ],
+              [
+                "一",
+                0.0
+              ],
+              [
+                "上",
+                0.5
+              ]
+            ],
+            "average": 0.4957
+          }
+        }
+      ]
+    },
+    "Q29": {
+      "question": "擬音語と擬態語の違いは何ですか？",
+      "score": 0.7788,
+      "score_std": 0.0,
+      "length": 89.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "T": 0.13777,
+          "P": 0.16283,
+          "S": 0.23584
+        },
+        "truthfulness": {
+          "T": 0.27111,
+          "P": 0.26667,
+          "S": 0.26222
+        },
+        "helpfulness": 1.0,
+        "average": 0.77881
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "擬音語は音や動作を表す言葉（例：ドンドコ、ガシャン）で、擬態語は事物の状態や様子を表す言葉（例：赤々、青白い）です。擬音語は「聞こえる」こと、擬態語は「見える」ことを描写します。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403239",
+          "scores": {
+            "fluency": {
+              "T": 0.137772,
+              "P": 0.16283,
+              "S": 0.235842
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "T": 0.271111,
+              "P": 0.266667,
+              "S": 0.262222
+            },
+            "helpfulness": 1.0,
+            "helpfulness_results": [],
+            "average": 0.77881
+          }
+        }
+      ]
+    },
+    "Q30": {
+      "question": "重箱読みとは何ですか？",
+      "score": 0.557,
+      "score_std": 0.0,
+      "length": 149.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "R": 0.73756
+        },
+        "truthfulness": {
+          "R": 0.93333
+        },
+        "helpfulness": 0.0,
+        "average": 0.55696
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "重箱読みとは、漢字の読み方を、その漢字が表す意味とは異なる、他の読み方で読むこと、またはその読み方を指す言葉です。例えば、「重箱」の「重」は「じゅう」と読みますが、「重箱読み」という言葉では「じゅう」と読まない場合があります。また、複数の意味を持つ漢字を、特定の意味で読むことを指すこともあります。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403246",
+          "scores": {
+            "fluency": {
+              "R": 0.737559
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "R": 0.933333
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "湯桶読み",
+                0.5
+              ],
+              [
+                "音読",
+                0.0
+              ],
+              [
+                "訓読",
+                0.0
+              ]
+            ],
+            "average": 0.55696
+          }
+        }
+      ]
+    },
+    "Q31": {
+      "question": "日本の開国について教えて。",
+      "score": 0.9472,
+      "score_std": 0.0,
+      "length": 98.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "P": 0.27878,
+          "T": 0.29015,
+          "S": 0.27555
+        },
+        "truthfulness": {
+          "P": 0.33047,
+          "T": 0.33333,
+          "S": 0.33333
+        },
+        "helpfulness": 1.0,
+        "average": 0.94721
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "日本の開国とは、江戸幕府が鎖国政策を終え、外国との貿易や交流を再開した出来事で、1853年のペリー来航と1854年の日米和親条約締結をきっかけに、1868年の明治維新を経て近代化が進められました。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403253",
+          "scores": {
+            "fluency": {
+              "P": 0.278783,
+              "T": 0.290154,
+              "S": 0.275547
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "P": 0.330466,
+              "T": 0.333333,
+              "S": 0.333333
+            },
+            "helpfulness": 1.0,
+            "helpfulness_results": [],
+            "average": 0.94721
+          }
+        }
+      ]
+    },
+    "Q32": {
+      "question": "関ヶ原の戦いについて教えて。",
+      "score": 0.9556,
+      "score_std": 0.0,
+      "length": 124.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "S": 0.33976,
+          "P": 0.304,
+          "T": 0.33466
+        },
+        "truthfulness": {
+          "S": 0.29123,
+          "P": 0.30596,
+          "T": 0.29123
+        },
+        "helpfulness": 1.0,
+        "average": 0.95561
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "関ヶ原の戦いは、1600年に徳川家康率いる東軍と石田三成率いる西軍が戦った戦いで、東軍の勝利により徳川家康が天下統一を進めるきっかけとなりました。この戦いは、豊臣秀吉の死後、権力闘争が激化した中で起こり、日本の歴史における大きな転換点となりました。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403260",
+          "scores": {
+            "fluency": {
+              "S": 0.339756,
+              "P": 0.303999,
+              "T": 0.33466
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "S": 0.291228,
+              "P": 0.305965,
+              "T": 0.291228
+            },
+            "helpfulness": 1.0,
+            "helpfulness_results": [],
+            "average": 0.95561
+          }
+        }
+      ]
+    },
+    "Q33": {
+      "question": "日本の東西南北端点について教えて。",
+      "score": 0.4181,
+      "score_std": 0.0,
+      "length": 83.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "P": 0.56292
+        },
+        "truthfulness": {
+          "P": 0.69143
+        },
+        "helpfulness": 0.0,
+        "average": 0.41812
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "日本の東西南北端点は、東端が鹿児島県の与論島（与論東端）、西端が鹿児島県の与論島（与論西端）、南端が沖縄県の宮古島（宮古南端）、北端が北海道の釧路市（釧路北端）です。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403268",
+          "scores": {
+            "fluency": {
+              "P": 0.562918
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "P": 0.691429
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "択捉島",
+                0.0
+              ],
+              [
+                "沖ノ鳥島",
+                0.0
+              ],
+              [
+                "南鳥島",
+                0.0
+              ],
+              [
+                "与那国",
+                0.0
+              ],
+              [
+                "与那国島",
+                0.5
+              ]
+            ],
+            "average": 0.41812
+          }
+        }
+      ]
+    },
+    "Q34": {
+      "question": "瀬戸内海式気候とは何ですか？",
+      "score": 0.6351,
+      "score_std": 0.0,
+      "length": 93.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "S": 0.30222,
+          "T": 0.29543,
+          "P": 0.31294
+        },
+        "truthfulness": {
+          "S": 0.33027,
+          "T": 0.33333,
+          "P": 0.33103
+        },
+        "helpfulness": 0.0,
+        "average": 0.63508
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "瀬戸内海式気候とは、瀬戸内海沿岸地域に見られる、冬は温暖で日照時間が長く、夏は高温多湿になる気候のことです。太平洋側の気候と日本海側の気候の中間に位置し、年間を通して温暖なのが特徴です。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403275",
+          "scores": {
+            "fluency": {
+              "S": 0.302223,
+              "T": 0.295429,
+              "P": 0.312941
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "S": 0.330268,
+              "T": 0.333333,
+              "P": 0.331034
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "降水量",
+                0.0
+              ],
+              [
+                "少",
+                0.0
+              ]
+            ],
+            "average": 0.63508
+          }
+        }
+      ]
+    },
+    "Q35": {
+      "question": "天皇はどのような役割をもっていますか？",
+      "score": 0.9471,
+      "score_std": 0.0,
+      "length": 122.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "S": 0.33522,
+          "P": 0.32289,
+          "T": 0.30352
+        },
+        "truthfulness": {
+          "S": 0.28172,
+          "P": 0.28674,
+          "T": 0.31111
+        },
+        "helpfulness": 1.0,
+        "average": 0.94707
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "天皇は、日本国の象徴であり日本国民統合の象徴として、国政に関する行為を行うことなく、日本国憲法に基づき、国事行為の行使を通じて、国及び国民の調和の維持に努めます。また、伝統文化の継承や国際交流の推進など、精神的なリーダーシップを発揮しています。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403281",
+          "scores": {
+            "fluency": {
+              "S": 0.335224,
+              "P": 0.322895,
+              "T": 0.303523
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "S": 0.28172,
+              "P": 0.286738,
+              "T": 0.311111
+            },
+            "helpfulness": 1.0,
+            "helpfulness_results": [],
+            "average": 0.94707
+          }
+        }
+      ]
+    },
+    "Q36": {
+      "question": "三権分立とは何ですか？",
+      "score": 0.8336,
+      "score_std": 0.0,
+      "length": 152.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "P": 0.25971,
+          "T": 0.24674,
+          "S": 0.21823
+        },
+        "truthfulness": {
+          "P": 0.25287,
+          "T": 0.2705,
+          "S": 0.25287
+        },
+        "helpfulness": 1.0,
+        "average": 0.83364
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "三権分立とは、立法権（法律を作る）、行政権（法律を実行する）、司法権（法律を解釈・適用する）の3つの権力を、それぞれ異なる機関に分離することで、権力の集中を防ぎ、国民の自由と権利を保障する政治体制のことです。日本国憲法では、国会が立法権を、内閣が行政権を、裁判所が司法権をそれぞれ持つと定められています。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403289",
+          "scores": {
+            "fluency": {
+              "P": 0.259713,
+              "T": 0.246741,
+              "S": 0.218229
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "P": 0.252874,
+              "T": 0.270498,
+              "S": 0.252874
+            },
+            "helpfulness": 1.0,
+            "helpfulness_results": [],
+            "average": 0.83364
+          }
+        }
+      ]
+    },
+    "Q37": {
+      "question": "日本銀行の役割は何ですか？",
+      "score": 0.645,
+      "score_std": 0.0,
+      "length": 77.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "T": 0.35562,
+          "P": 0.32128,
+          "S": 0.33432
+        },
+        "truthfulness": {
+          "T": 0.31429,
+          "P": 0.30476,
+          "S": 0.30476
+        },
+        "helpfulness": 0.0,
+        "average": 0.64501
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "日本銀行は、日本の中央銀行であり、貨幣の発行、金融政策の実施、銀行の監督、外国為替及び外国貿易の管理など、金融システムの安定を維持する役割を担っています。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403297",
+          "scores": {
+            "fluency": {
+              "T": 0.355618,
+              "P": 0.321279,
+              "S": 0.334317
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "T": 0.314286,
+              "P": 0.304762,
+              "S": 0.304762
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "銀行券",
+                0.0
+              ]
+            ],
+            "average": 0.64501
+          }
+        }
+      ]
+    },
+    "Q38": {
+      "question": "信用取引と先物取引の違いは何ですか？",
+      "score": 0.597,
+      "score_std": 0.0,
+      "length": 126.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "P": 0.277,
+          "T": 0.26919,
+          "S": 0.3009
+        },
+        "truthfulness": {
+          "P": 0.31509,
+          "T": 0.30947,
+          "S": 0.3193
+        },
+        "helpfulness": 0.0,
+        "average": 0.59698
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "信用取引は、証券会社が投資家に自社の証券を融資して株式売買を行う取引で、先物取引は、将来の特定の日時に特定の資産を一定の価格で売買することを約束する契約です。信用取引は株式売買に限定され、先物取引は株式だけでなく金利や通貨など多様な資産に適用されます。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.403303",
+          "scores": {
+            "fluency": {
+              "P": 0.277002,
+              "T": 0.26919,
+              "S": 0.300902
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "P": 0.315088,
+              "T": 0.309474,
+              "S": 0.319298
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "借",
+                0.0
+              ]
+            ],
+            "average": 0.59698
+          }
+        }
+      ]
+    },
+    "Q39": {
+      "question": "日本脳炎とはどのような感染症ですか？",
+      "score": 0.9224,
+      "score_std": 0.0,
+      "length": 107.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "T": 0.29252,
+          "P": 0.30687,
+          "S": 0.3179
+        },
+        "truthfulness": {
+          "T": 0.29362,
+          "P": 0.29433,
+          "S": 0.30213
+        },
+        "helpfulness": 0.96,
+        "average": 0.92245
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "日本脳炎は、日本脳炎ウイルスによって引き起こされる蚊（三日誘蚊）媒介の感染症で、主に東南アジアや太平洋諸島などの地域で流行し、高熱や意識障害などの症状を引き起こす可能性があります。ワクチン接種によって予防できます。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.404708",
+          "scores": {
+            "fluency": {
+              "T": 0.292521,
+              "P": 0.306869,
+              "S": 0.317897
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "T": 0.293617,
+              "P": 0.294326,
+              "S": 0.302128
+            },
+            "helpfulness": 0.96,
+            "helpfulness_results": [
+              [
+                "2字超過",
+                0.96
+              ]
+            ],
+            "average": 0.92245
+          }
+        }
+      ]
+    },
+    "Q40": {
+      "question": "柔道と合気道の違いを教えて。",
+      "score": 0.9157,
+      "score_std": 0.0,
+      "length": 108.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "S": 0.29891,
+          "P": 0.31687,
+          "T": 0.24237
+        },
+        "truthfulness": {
+          "S": 0.29821,
+          "P": 0.29677,
+          "T": 0.29391
+        },
+        "helpfulness": 1.0,
+        "average": 0.91568
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "柔道は投げ技や関節技、絞め技を主体とした総合格闘技で、競技性が重視される点が特徴です。一方、合気道は、相手の力を利用し、体の軸を正して投げ技や関節技を施す武道で、実戦的な応用よりも精神修養や身体の調和が重視されます。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.404718",
+          "scores": {
+            "fluency": {
+              "S": 0.298907,
+              "P": 0.316866,
+              "T": 0.24237
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "S": 0.298208,
+              "P": 0.296774,
+              "T": 0.293907
+            },
+            "helpfulness": 1.0,
+            "helpfulness_results": [],
+            "average": 0.91568
+          }
+        }
+      ]
+    },
+    "Q41": {
+      "question": "葛根湯とは何ですか？",
+      "score": 0.4536,
+      "score_std": 0.0,
+      "length": 120.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "S": 0.20125,
+          "T": 0.16525,
+          "P": 0.19953
+        },
+        "truthfulness": {
+          "S": 0.26374,
+          "T": 0.26154,
+          "P": 0.2696
+        },
+        "helpfulness": 0.0,
+        "average": 0.45364
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "葛根湯とは、葛根、甘草、大塩、生姜を主な材料とする日本古来の薬膳湯で、風邪による発熱や頭痛、体のこわばりなどを緩和する効果があるとされます。特に、葛根の成分であるペクチンが解熱作用を持つため、風邪の初期症状に効果的であると考えられています。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.404726",
+          "scores": {
+            "fluency": {
+              "S": 0.201254,
+              "T": 0.16525,
+              "P": 0.199532
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "S": 0.263736,
+              "T": 0.261538,
+              "P": 0.269597
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "漢方",
+                0.0
+              ]
+            ],
+            "average": 0.45364
+          }
+        }
+      ]
+    },
+    "Q42": {
+      "question": "必須アミノ酸とは何ですか？",
+      "score": 0.641,
+      "score_std": 0.0,
+      "length": 147.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "T": 0.34726,
+          "P": 0.32407,
+          "S": 0.2645
+        },
+        "truthfulness": {
+          "T": 0.33183,
+          "P": 0.33333,
+          "S": 0.3221
+        },
+        "helpfulness": 0.0,
+        "average": 0.64103
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "必須アミノ酸とは、体内で合成できないため、食事から摂取する必要があるアミノ酸のことで、ヒスチジン、イソロイシン、ロイシン、リジン、メチオニン、フェニルアラニン、トレオニン、バリンの8種類があります。これらのアミノ酸は、タンパク質の構成要素として重要であり、成長や修復、免疫機能などに不可欠です。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.404733",
+          "scores": {
+            "fluency": {
+              "T": 0.347262,
+              "P": 0.32407,
+              "S": 0.264498
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "T": 0.331835,
+              "P": 0.333333,
+              "S": 0.322097
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "トリプトファン",
+                0.0
+              ],
+              [
+                "9種",
+                0.0
+              ]
+            ],
+            "average": 0.64103
+          }
+        }
+      ]
+    },
+    "Q43": {
+      "question": "天空の城ラピュタはどのような作品ですか？",
+      "score": 0.7365,
+      "score_std": 0.0,
+      "length": 152.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "P": 0.31753,
+          "T": 0.31557,
+          "S": 0.32814
+        },
+        "truthfulness": {
+          "P": 0.25319,
+          "T": 0.24823,
+          "S": 0.24681
+        },
+        "helpfulness": 0.5,
+        "average": 0.73649
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "天空の城ラピュタは、スタジオジブリ制作のアニメーション映画で、1986年に公開されました。宮崎駿監督による作品で、空を飛ぶ島ラピュタの物語を中心に、科学技術と自然、そして人間の欲望や平和について深く掘り下げたストーリーが展開されます。美しい絵作りと感動的な音楽で知られ、世界的に高い評価を受けた作品です。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.404741",
+          "scores": {
+            "fluency": {
+              "P": 0.317526,
+              "T": 0.315573,
+              "S": 0.328136
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "P": 0.253191,
+              "T": 0.248227,
+              "S": 0.246809
+            },
+            "helpfulness": 0.5,
+            "helpfulness_results": [
+              [
+                "パズー",
+                0.5
+              ]
+            ],
+            "average": 0.73649
+          }
+        }
+      ]
+    },
+    "Q44": {
+      "question": "走れメロスはどのような作品ですか？",
+      "score": 0.4146,
+      "score_std": 0.0,
+      "length": 117.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "P": 0.17634,
+          "T": 0.18369,
+          "S": 0.17797
+        },
+        "truthfulness": {
+          "P": 0.21407,
+          "T": 0.23852,
+          "S": 0.25333
+        },
+        "helpfulness": 0.0,
+        "average": 0.41464
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "「走れメロス」は、エウブロスのエウパミアの作で、古代ギリシャの悲劇の一つです。主人公のメロスが、父を殺した盗賊から逃亡し、愛する妻や子供たちを守るために奔走する姿を描いた物語で、正義、家族の絆、そして運命の残酷さをテーマにしています。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.404750",
+          "scores": {
+            "fluency": {
+              "P": 0.176338,
+              "T": 0.183686,
+              "S": 0.177967
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "P": 0.214074,
+              "T": 0.238519,
+              "S": 0.253333
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "太宰治",
+                0.0
+              ],
+              [
+                "短編",
+                0.0
+              ],
+              [
+                "小説",
+                0.0
+              ],
+              [
+                "信",
+                0.0
+              ],
+              [
+                "友",
+                0.0
+              ]
+            ],
+            "average": 0.41464
+          }
+        }
+      ]
+    },
+    "Q45": {
+      "question": "山田耕筰は何をした人ですか？",
+      "score": 0.6808,
+      "score_std": 0.0,
+      "length": 154.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "T": 0.22842,
+          "P": 0.2402,
+          "S": 0.23174
+        },
+        "truthfulness": {
+          "T": 0.27101,
+          "P": 0.28333,
+          "S": 0.28768
+        },
+        "helpfulness": 0.5,
+        "average": 0.6808
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "山田耕筰は、日本の音楽理論家・作曲家であり、日本の音楽教育に大きな影響を与えた人物です。西洋音楽理論を日本語で体系的に解説し、作曲技法の普及にも貢献しました。特に、和声理論の普及に力を入れ、多くの音楽家に影響を与えました。また、作曲家としても、オペラ「月光」や歌曲「秋の暮」など、数多くの作品を残しています。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.404757",
+          "scores": {
+            "fluency": {
+              "T": 0.228422,
+              "P": 0.240201,
+              "S": 0.231742
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "T": 0.271014,
+              "P": 0.283333,
+              "S": 0.287681
+            },
+            "helpfulness": 0.5,
+            "helpfulness_results": [
+              [
+                "赤とんぼ",
+                0.5
+              ]
+            ],
+            "average": 0.6808
+          }
+        }
+      ]
+    },
+    "Q46": {
+      "question": "宝塚歌劇団の特徴は？",
+      "score": 0.5528,
+      "score_std": 0.0,
+      "length": 124.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "S": 0.28913,
+          "T": 0.25745,
+          "P": 0.21794
+        },
+        "truthfulness": {
+          "S": 0.29231,
+          "T": 0.30769,
+          "P": 0.29377
+        },
+        "helpfulness": 0.0,
+        "average": 0.55276
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "宝塚歌劇団は、女性役者全員がメイクを施し、男性役も女性が演じる「全女性キャスト」が最大の特徴です。華やかな衣装や舞台美術、そして女性たちの歌声と演技で、国内外から多くの観客を魅了しています。また、演目の幅広さや、卒業生の活躍も宝塚歌劇団の魅力です。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.404766",
+          "scores": {
+            "fluency": {
+              "S": 0.289127,
+              "T": 0.257446,
+              "P": 0.217943
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "S": 0.292308,
+              "T": 0.307692,
+              "P": 0.293773
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "男役",
+                0.0
+              ],
+              [
+                "兵庫県",
+                0.5
+              ]
+            ],
+            "average": 0.55276
+          }
+        }
+      ]
+    },
+    "Q47": {
+      "question": "春分の日と秋分の日はどのように決まるの？",
+      "score": 0.5816,
+      "score_std": 0.0,
+      "length": 94.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "S": 0.27083,
+          "P": 0.23594,
+          "T": 0.27551
+        },
+        "truthfulness": {
+          "S": 0.31611,
+          "P": 0.31685,
+          "T": 0.32959
+        },
+        "helpfulness": 0.0,
+        "average": 0.58161
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "春分の日と秋分の日は、地球の自転軸が太陽に対して垂直になる日で、地球が公転する軌道上で太陽の光が赤道に垂直に当たる日として決定されます。春分は3月20日頃、秋分は9月22日頃に起こります。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.404773",
+          "scores": {
+            "fluency": {
+              "S": 0.270833,
+              "P": 0.235941,
+              "T": 0.275506
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "S": 0.316105,
+              "P": 0.316854,
+              "T": 0.329588
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "春分点",
+                0.0
+              ]
+            ],
+            "average": 0.58161
+          }
+        }
+      ]
+    },
+    "Q48": {
+      "question": "七草がゆについて教えて。",
+      "score": 0.312,
+      "score_std": 0.0,
+      "length": 89.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "S": 0.07142,
+          "T": 0.0796,
+          "P": 0.06001
+        },
+        "truthfulness": {
+          "S": 0.21917,
+          "T": 0.265,
+          "P": 0.24083
+        },
+        "helpfulness": 0.0,
+        "average": 0.31201
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "七草がゆは、正月七日（元日から七日目）に食べる和菓子で、薬味として七草（姫野菜の一種）を刻んで加えたお粥です。古くから縁起物として親しまれ、体調を整える効果があるとされています。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.404779",
+          "scores": {
+            "fluency": {
+              "S": 0.071415,
+              "T": 0.079599,
+              "P": 0.060013
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "S": 0.219167,
+              "T": 0.265,
+              "P": 0.240833
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "無病息災",
+                0.0
+              ],
+              [
+                "春の七草",
+                0.0
+              ],
+              [
+                "セリ",
+                0.0
+              ]
+            ],
+            "average": 0.31201
+          }
+        }
+      ]
+    },
+    "Q49": {
+      "question": "神社と寺の違いについて教えて。",
+      "score": 0.8828,
+      "score_std": 0.0,
+      "length": 165.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "S": 0.2638,
+          "P": 0.28909,
+          "T": 0.24698
+        },
+        "truthfulness": {
+          "S": 0.27117,
+          "P": 0.28662,
+          "T": 0.29084
+        },
+        "helpfulness": 1.0,
+        "average": 0.88283
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "神社は神道の祭祀を行う場所で、自然崇拝や祖先崇拝に基づき、木造建築や鳥居などが特徴的です。一方、寺は仏教の教えを広めるための施設で、仏像や仏具、鐘楼などが配置され、禅寺や曹洞宗などの宗派が存在します。神社は「伊弉諾尊（いざながみこ）」と「伊弉冉尊（いざなみみこと）」を祀る本殿が基本ですが、寺は仏像を安置する本堂が中心となります。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.404785",
+          "scores": {
+            "fluency": {
+              "S": 0.263798,
+              "P": 0.289094,
+              "T": 0.246981
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "S": 0.271168,
+              "P": 0.286624,
+              "T": 0.290839
+            },
+            "helpfulness": 1.0,
+            "helpfulness_results": [],
+            "average": 0.88283
+          }
+        }
+      ]
+    },
+    "Q50": {
+      "question": "神在月とは何ですか？",
+      "score": 0.2392,
+      "score_std": 0.0,
+      "length": 82.0,
+      "length_std": 0.0,
+      "scores": {
+        "fluency": {
+          "S": 0.10988,
+          "P": 0.09544,
+          "T": 0.11391
+        },
+        "truthfulness": {
+          "S": 0.14211,
+          "P": 0.12982,
+          "T": 0.12632
+        },
+        "helpfulness": 0.0,
+        "average": 0.23916
+      },
+      "num_valid_trials": 1,
+      "samples": [
+        {
+          "answer": "神在月とは、月が地球と太陽の間にあるため、月の引力が潮汐に影響を与え、特に満潮の高さが極端に高くなる現象です。この時期は、漁業や港湾作業に影響が出ることがあります。",
+          "generated": true,
+          "timestamp": "2025-12-10T18:57:55.404794",
+          "scores": {
+            "fluency": {
+              "S": 0.109885,
+              "P": 0.095439,
+              "T": 0.113912
+            },
+            "fluency_discount": 1.0,
+            "truthfulness": {
+              "S": 0.142105,
+              "P": 0.129825,
+              "T": 0.126316
+            },
+            "helpfulness": 0.0,
+            "helpfulness_results": [
+              [
+                "出雲",
+                0.0
+              ],
+              [
+                "旧暦",
+                0.0
+              ],
+              [
+                "10月",
+                0.0
+              ],
+              [
+                "神無月",
+                0.0
+              ]
+            ],
+            "average": 0.23916
+          }
+        }
+      ]
+    }
+  }
+}
